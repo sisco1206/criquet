@@ -10,17 +10,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: check code
         run: echo "Good morning Francis"
         shell: bash
 
-  test:
+  goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: test pipeline
+      - name: goodbye pipeline
         run: echo "Hello word"
         shell: bash
 
