@@ -6,7 +6,7 @@ on:
       - main && dev
   pull_request:
     branches:
-      - main
+      - main && dev
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,3 +16,12 @@ jobs:
       - name: check code
         run: echo "Good morning Francis"
         shell: bash
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test pipeline
+        run: echo "Hello word"
+        shell: bash
+
+
